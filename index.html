@@ -8,7 +8,7 @@
   <body>
     <header>
       <figure>
-        <img src="Assets_Netuno/assets/logo.png" alt="" />
+        <img src="Assets_Netuno/assets/logo.png" alt="Logo Projeto Netuno" />
       </figure>
       <nav>
         <a href="#projeto">O Projeto</a>
@@ -23,106 +23,266 @@
     <main>
       <article id="formulario">
         <figure></figure>
-        <form action="cadastro.php" method="post" autocomplete="on"></form>
+
+        <form action="cadastro.php" method="post" autocomplete="on">
+          <h3>Formulário de Cadastro</h3>
+          <fieldset>
+            <legend>Preencha seus dados</legend>
+            <div>
+              <label for="inome">Nome Completo</label>
+              <input
+                type="text"
+                name="nome"
+                id="inome"
+                required
+                autocomplete="name"
+                placeholder="Nome Completo"
+                maxlength="30"
+              />
+            </div>
+            <div>
+              <label for="iemail">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="iemail"
+                required
+                autocomplete="email"
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+                placeholder="E-mail"
+                maxlength="20"
+              />
+            </div>
+            <div>
+              <label for="iestado">Estado</label>
+              <input
+                type="text"
+                name="estado"
+                id="iestado"
+                list="lista-estado"
+                required
+                placeholder="Estado"
+              />
+              <datalist id="lista-estado">
+                <option value="MG">Minas Gerais</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="MG">Minas Gerais</option>
+              </datalist>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Conhecimento de Programação*</legend>
+            <div>
+              <input type="checkbox" name="html" id="ihtml" />
+              <label for="ihtml">HTML</label>
+              <input type="checkbox" name="html" id="ihtml" />
+              <label for="ihtml">HTML</label>
+              <input type="checkbox" name="html" id="ihtml" />
+              <label for="ihtml">HTML</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Já trabalhou com desenvolvimento?</legend>
+            <div>
+              <input type="radio" name="experiencia" id="inao" value="nao" />
+              <label for="inao">Não</label>
+              <input type="radio" name="experiencia" id="isim" value="sim" />
+              <label for="isim">Sim</label>
+            </div>
+          </fieldset>
+          <hr />
+          <p>(*) Campos obrigatórios</p>
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+          <p>
+            Ao clicar em enviar, você concorda com todos os termos de uso de
+            dado descritos em <a href="#">política de privacidade</a>
+          </p>
+        </form>
       </article>
 
       <article id="projeto">
         <figure></figure>
-        <h2></h2>
-        <p></p>
-        <p><strong></strong></p>
+        <h2>O Projeto</h2>
+        <p>
+          Com o "novo normal" causado pela pandemia dos últimos anos, mais
+          empresas no mundo todo têm aberto oportunidades no modelo Home Office.
+          Alinhado a depreciação da moeda local, temos um alto índice de
+          profissionais migrando para trabalhos em outros países.
+        </p>
+        <p>
+          <strong>
+            O projeto Netuno, idealizado pela Fasters, tem po objetivo reduzir
+            os estresses causados por recrutamento e turn over na área de
+            tecnologia, bem como gerar oportunidades de carreira para novos
+            profissionais.
+          </strong>
+        </p>
       </article>
 
       <article id="problema">
         <figure></figure>
-        <h2></h2>
-        <p><strong></strong></p>
-        <p></p>
-        <p><strong></strong></p>
+        <h2>O Problema</h2>
+        <p>
+          <strong
+            >Falta de profissionais de TI no Mercado brasileiro: um problema que
+            demanda atenção urgente.</strong
+          >
+        </p>
+        <hr />
+        <p>
+          Estima-se que atualmente tenhamos um déficit de 408 mil postos de
+          trabalho, com perdas se acumulando na casa dos R$167 bilhões, de
+          acordo com a Softex, uma organização social voltada ao fomento da área
+          de TI.
+        </p>
+        <p>
+          <strong
+            >Um dos principais fatores dessa falta de profissionais é o êxodo de
+            profissionais para o exterior.</strong
+          >
+        </p>
         <div>
-          <h3></h3>
-          <p></p>
+          <h3>Oportunidade</h3>
+          <p>
+            Acreditamos que a combinação de interesse, dedicação e oportunidades
+            pode causar um grande impacto nas pessoas, nas organizações e no
+            mundo.
+          </p>
         </div>
         <div>
-          <h3></h3>
-          <p></p>
+          <h3>Comunidade</h3>
+          <p>
+            Dentro de um grupo de pessoas mais experientes e acessíveis, a curva
+            de aprendizado ocorre de uma forma mais rápida, fluída e eficiente.
+          </p>
         </div>
         <div>
-          <h3></h3>
-          <p></p>
+          <h3>Experiência Real</h3>
+          <p>
+            Entendemos que somente as experiências reais poderão trazer a
+            bagagem que a teoria não o pode fazer.
+          </p>
         </div>
       </article>
 
       <article id="jornada">
         <figure></figure>
-        <h2></h2>
+        <h2>Sua Jornada</h2>
         <figure></figure>
         <div>
-          <figure></figure>
-          <p></p>
+          <figure>
+            <img
+              src="Assets_Netuno/icones/calendario.png"
+              alt="Ícone calendário"
+            />
+          </figure>
+          <p>Programas de 4 meses de duração, sendo 6 horas/dia.</p>
         </div>
         <div>
-          <figure></figure>
-          <p></p>
+          <figure>
+            <img src="Assets_Netuno/icones/medalha.png" alt="Ícone Medalha" />
+          </figure>
+          <p>Do Zero ao Júnior Promissor em 4 meses.</p>
         </div>
         <div>
-          <figure></figure>
-          <p></p>
+          <figure>
+            <img src="Assets_Netuno/icones/relogio.png" alt="Ícone Relógio" />
+          </figure>
+          <p>640 horas de aplicação prática dos conceitos.</p>
         </div>
         <div>
-          <figure></figure>
-          <p></p>
+          <figure>
+            <img src="Assets_Netuno/icones/home.png" alt="Ícone Home" />
+          </figure>
+          <p>Mentoria individual e coletiva em padrão ágil.</p>
         </div>
         <div>
-          <figure></figure>
-          <p></p>
+          <figure>
+            <img src="Assets_Netuno/icones/group.png" alt="Ícone Grupo" />
+          </figure>
+          <p>100% Home Office com plataformas de cursos online.</p>
         </div>
         <div>
-          <figure></figure>
-          <p></p>
+          <figure>
+            <img src="Assets_Netuno/icones/target.png" alt="Ícone Target" />
+          </figure>
+          <p>Variedade de áreas dentro da tecnologia.</p>
         </div>
       </article>
       <div>
-        <p><a href="#formulario"></a></p>
-        <figure></figure>
+        <p>
+          Quero me cadastrar para o <a href="#formulario">Processo Seletivo</a>
+          <img src="Assets_Netuno/icones/enter.png" alt="Ícone Enter" />
+        </p>
+        <figure>
+          <img
+            src="Assets_Netuno/Elements/Vector1.png"
+            alt="Imagem assinatura rúbrica"
+          />
+        </figure>
       </div>
 
       <article id="objetivo">
-        <h2></h2>
+        <h2>Objetivos</h2>
         <div>
-          <h3></h3>
-          <p></p>
+          <h3>Otimizar</h3>
+          <p>
+            Otimizar todo processo de contratação chegando a contribuir com uma
+            economia de 40% no processo de recrutamento.
+          </p>
         </div>
         <div>
-          <h3></h3>
-          <p></p>
+          <h3>Gerar</h3>
+          <p>
+            Gerar novas oportunidades de carreira para pessoas interessadas em
+            ingressar na área ou migrar de outras áreas que esteja descontente.
+          </p>
         </div>
         <div>
-          <h3></h3>
-          <p></p>
+          <h3>Filtrar</h3>
+          <p>
+            Criar oportunidades brilhantes para profissionais que se destacarem
+            junto a parceiros estratégicos de negócios.
+          </p>
         </div>
       </article>
     </main>
 
     <footer>
       <div>
-        <figure></figure>
+        <figure>
+          <img
+            src="Assets_Netuno/assets/logo+slogan.png"
+            alt="Logo Projeto Netuno"
+          />
+        </figure>
         <nav>
-          <a href="#" target="_blank"><img src="" alt="" /></a>
-          <a href="#" target="_blank"><img src="" alt="" /></a>
-          <a href="#" target="_blank"><img src="" alt="" /></a>
+          <a href="https://www.facebook.com/fastersbr" target="_blank"
+            ><img src="Assets_Netuno/icones/fb.png" alt="Ícone Facebook"
+          /></a>
+          <a href="https://www.instagram.com/fastersbr" target="_blank"
+            ><img src="Assets_Netuno/icones/ig.png" alt="Ícone Instagram"
+          /></a>
+          <a href="https://www.linkedin.com/company/fastersbr/" target="_blank"
+            ><img src="Assets_Netuno/icones/in.png" alt="Ícone Linkedin"
+          /></a>
           <p></p>
         </nav>
       </div>
       <div>
         <nav>
           <a href="#formulario" class="link-formulario">Processo Seletivo</a>
-          <a href="#projeto">O Projeto</a>
-          <a href="#problema">O Problema</a>
-          <a href="#jornada">Sua Jornada</a>
-          <a href="#objetivo">Objetivos</a>
+          <ul>
+            <li><a href="#projeto">O Projeto</a></li>
+            <li><a href="#problema">O Problema</a></li>
+            <li><a href="#jornada">Sua Jornada</a></li>
+            <li><a href="#objetivo">Objetivos</a></li>
+          </ul>
         </nav>
       </div>
+      <hr />
       <div>
         <h4><strong>Contato</strong></h4>
         <p>11 91234.5678</p>
