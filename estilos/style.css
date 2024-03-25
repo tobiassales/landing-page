@@ -21,6 +21,7 @@
 html,
 body {
   height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -74,7 +75,7 @@ header > hr {
 
 main > article#formulario {
   width: 100%;
-  height: 100vh;
+  height: 1050px;
   padding: 5px;
   background: var(--cor2) url("../Assets_Netuno/bannertopo.png") no-repeat;
   background-position: top left;
@@ -91,17 +92,19 @@ main > article#formulario > form {
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.35);
 
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
-  transform: translatex(-50%);
+  transform: translateX(-50%);
 }
 
 article#formulario form h2 {
   color: rgba(0, 0, 0, 0.23);
+  font-size: 1.3em;
+  text-indent: 10px;
 }
 
 article#formulario form fieldset {
-  border: solid;
+  border: none;
   padding-top: 10px;
   margin-bottom: 30px;
   margin-top: 10px;
@@ -110,7 +113,7 @@ article#formulario form fieldset {
 article#formulario form fieldset legend {
   color: var(--cor2);
   font-weight: bolder;
-  font-size: 0.95em;
+  font-size: 0.9em;
 }
 
 article#formulario form div.dados-pessoais label {
@@ -124,24 +127,71 @@ article#formulario form div.dados-pessoais input {
   width: 100%;
 }
 
-article#formulario div#caixa-selecao legend {
+article#formulario form div#caixa-selecao legend {
   color: var(--cor1);
 }
 
-article#formulario div#caixa-selecao {
+article#formulario form div#caixa-selecao {
   background-color: var(--cor2);
   color: var(--cor1);
   margin: 0px -25px 20px -25px;
   padding: 10px 25px 1px 25px;
 }
 
-article#formulario p,
-hr {
-  color: rgba(0, 0, 0, 0.495);
+article#formulario p {
+  color: var(--cor2);
   text-align: center;
-  font-size: 0.6em;
+  font-size: 0.7em;
+  margin-bottom: 20px;
 }
 
-article#formulario > p:nth-child(1) {
+article#formulario div > input#botao-enviar {
+  background-color: var(--cor2);
+  color: var(--cor1);
+  font-size: 1em;
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px 0px;
+}
+
+article#formulario p#termos-uso {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+article#formulario p#termos-uso > a {
   color: var(--cor2);
+  text-decoration: none;
+}
+
+article#formulario p#termos-uso > a:hover {
+  text-decoration: underline;
+}
+
+article#projeto {
+  background-color: var(--cor2);
+  color: var(--cor1);
+  padding: 5px;
+}
+
+article#projeto figure {
+  height: 400px;
+  width: 100%;
+  background: url("../Assets_Netuno/dev.png") center no-repeat;
+  background-size: contain;
+}
+
+article#projeto div {
+  width: 420px;
+  margin: 0px auto 50px auto;
+}
+
+article#projeto h2 {
+  font-size: 2.5em;
+  margin: 15px 0px;
+}
+
+article#projeto p {
+  margin: 15px 0px;
 }
