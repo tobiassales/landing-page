@@ -26,10 +26,10 @@
         <figure></figure>
 
         <form action="cadastro.php" method="post" autocomplete="on">
-          <h3>Formulário de Cadastro</h3>
+          <h2>Formulário de Cadastro</h2>
           <fieldset>
             <legend>Preencha seus dados</legend>
-            <div>
+            <div class="dados-pessoais">
               <label for="inome">Nome Completo</label>
               <input
                 type="text"
@@ -41,7 +41,7 @@
                 maxlength="30"
               />
             </div>
-            <div>
+            <div class="dados-pessoais">
               <label for="iemail">E-mail</label>
               <input
                 type="email"
@@ -54,7 +54,7 @@
                 maxlength="20"
               />
             </div>
-            <div>
+            <div class="dados-pessoais">
               <label for="iestado">Estado</label>
               <input
                 type="text"
@@ -71,17 +71,19 @@
               </datalist>
             </div>
           </fieldset>
-          <fieldset>
-            <legend>Conhecimento de Programação*</legend>
-            <div>
-              <input type="checkbox" name="html" id="ihtml" />
-              <label for="ihtml">HTML</label>
-              <input type="checkbox" name="html" id="ihtml" />
-              <label for="ihtml">HTML</label>
-              <input type="checkbox" name="html" id="ihtml" />
-              <label for="ihtml">HTML</label>
-            </div>
-          </fieldset>
+          <div id="caixa-selecao">
+            <fieldset>
+              <legend>Conhecimento de Programação*</legend>
+              <div>
+                <input type="checkbox" name="html" id="ihtml" />
+                <label for="ihtml">HTML</label>
+                <input type="checkbox" name="html" id="ihtml" />
+                <label for="ihtml">HTML</label>
+                <input type="checkbox" name="html" id="ihtml" />
+                <label for="ihtml">HTML</label>
+              </div>
+            </fieldset>
+          </div>
           <fieldset>
             <legend>Já trabalhou com desenvolvimento?</legend>
             <div>
