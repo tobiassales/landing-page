@@ -21,7 +21,8 @@
 html,
 body {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 header {
@@ -44,8 +45,7 @@ header > figure > img {
 
 header > nav {
   display: inline-block;
-  margin: 10px 5px 20px 5px;
-  text-align: center;
+  margin: 0px 5px 10px 5px;
 }
 
 header > nav > a {
@@ -59,7 +59,6 @@ header > nav > a {
 
 header > nav > a.link-formulario {
   background-color: var(--cor0);
-  margin: 20px auto 0px auto;
 }
 
 header > nav > a:hover {
@@ -78,14 +77,14 @@ main > article#formulario {
   height: 1050px;
   padding: 5px;
   background: var(--cor2) url("../Assets_Netuno/bannertopo.png") no-repeat;
-  background-position: top left;
+  background-position: top center;
   background-size: contain;
   position: relative;
 }
 
 main > article#formulario > form {
   background-color: var(--cor1);
-  width: 320px;
+  width: 305px;
   padding: 25px;
   border: 1px solid var(--cor3);
   border-radius: 15px;
@@ -100,7 +99,6 @@ main > article#formulario > form {
 article#formulario form h2 {
   color: rgba(0, 0, 0, 0.23);
   font-size: 1.3em;
-  text-indent: 10px;
 }
 
 article#formulario form fieldset {
@@ -114,6 +112,10 @@ article#formulario form fieldset legend {
   color: var(--cor2);
   font-weight: bolder;
   font-size: 0.9em;
+}
+
+article#formulario form label {
+  margin: 0px 13px 0px 5px;
 }
 
 article#formulario form div.dados-pessoais label {
@@ -134,8 +136,64 @@ article#formulario form div#caixa-selecao legend {
 article#formulario form div#caixa-selecao {
   background-color: var(--cor2);
   color: var(--cor1);
-  margin: 0px -25px 20px -25px;
-  padding: 10px 25px 1px 25px;
+  margin: 0px -26px 20px -26px;
+  padding: 10px 26px 1px 26px;
+}
+
+article#formulario form div.selecao > input {
+  display: none;
+}
+
+article#formulario form div.selecao > input + label {
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+article#formulario input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  border: 2px solid var(--cor1);
+  background-color: var(--cor2);
+}
+
+article#formulario input[type="checkbox"]:checked + label::before {
+  background-color: var(--cor1);
+  padding: 1px;
+}
+
+article#formulario input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  border-radius: 3px;
+  border: 2px solid var(--cor2);
+  background-color: var(--cor1);
+}
+
+article#formulario input[type="radio"]:checked + label::before {
+  background-color: var(--cor2);
+  padding: 1px;
+}
+
+article#formulario input[type="radio"] + label {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+article#formulario hr {
+  border: 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 article#formulario p {
@@ -154,6 +212,11 @@ article#formulario div > input#botao-enviar {
   border-radius: 8px;
   border: none;
   margin: 10px 0px;
+}
+
+article#formulario div > input#botao-enviar:hover {
+  background-color: var(--cor3);
+  color: var(--cor0);
 }
 
 article#formulario p#termos-uso {
