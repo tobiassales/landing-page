@@ -201,37 +201,47 @@ article#problema {
     no-repeat;
   background-size: contain;
   padding: 5px;
+  height: 1500px;
+  width: 100%;
+  position: relative;
 }
 
-article#problema > div > h2 {
+article#problema > article > h2 {
   color: var(--cor2);
   font-size: 2.5em;
   margin-bottom: 15px;
 }
 
-article#problema > div > h3,
+article#problema > article > h3,
 p,
 hr {
   margin: 10px 0px 20px 0px;
 }
 
-article#problema > div {
+article#problema > article {
   background-color: aquamarine;
   min-width: 220px;
   max-width: 420px;
+  position: absolute;
+  right: 10%;
+}
+
+article#problema > div > h3 {
+  font-size: 1.8em;
+}
+
+article#problema > div > div {
   position: relative;
-  top: 50%;
+  bottom: 10%;
 }
 
-article#problema > div.solucao > h2 {
-}
-
-article#problema > div.solucao {
+article#problema > div > div {
   display: inline-block;
   background-color: var(--cor1);
-  width: 300px;
+  width: 335px;
   height: 235px;
   text-align: center;
   margin: 10px;
-  padding: 20px;
+  padding: 30px;
+  border-radius: 12px;
 }
