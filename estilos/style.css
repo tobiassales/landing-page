@@ -91,7 +91,7 @@ main > article#formulario > form {
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.35);
 
   position: absolute;
-  top: 30%;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -197,13 +197,15 @@ article#projeto p {
 }
 
 article#problema {
-  background: var(--cor3) url("../Assets_Netuno/Container2.png") top center
-    no-repeat;
+  background: url("../Assets_Netuno/Container2.png") top center no-repeat;
   background-size: contain;
   padding: 5px;
-  height: 1500px;
+  height: 1700px;
   width: 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 article#problema > article > h2 {
@@ -219,24 +221,19 @@ hr {
 }
 
 article#problema > article {
-  background-color: aquamarine;
+  background-color: var(--cor1);
   min-width: 220px;
   max-width: 420px;
-  position: absolute;
-  right: 10%;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.45);
 }
 
 article#problema > div > h3 {
   font-size: 1.8em;
 }
 
-article#problema > div > div {
-  position: relative;
-  bottom: 10%;
-}
-
-article#problema > div > div {
-  display: inline-block;
+article#problema > div {
   background-color: var(--cor1);
   width: 335px;
   height: 235px;
@@ -244,4 +241,5 @@ article#problema > div > div {
   margin: 10px;
   padding: 30px;
   border-radius: 12px;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.45);
 }
