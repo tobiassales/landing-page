@@ -21,6 +21,7 @@
 html,
 body {
   height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -320,20 +321,15 @@ article.link-formulario > div {
   margin: 115px auto 20px auto;
   background-color: var(--cor0);
   color: var(--cor1);
-  width: 450px;
+  width: 335px;
   height: 70px;
   border-radius: 8px;
-  text-align: center;
   font-weight: bold;
-  position: relative;
-}
-
-article.link-formulario p {
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 article.link-formulario a {
@@ -345,7 +341,47 @@ article.link-formulario p a:hover {
   text-decoration: underline;
 }
 
-article.link-formulario p img {
+article.link-formulario p {
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+article.link-formulario > div > img {
   height: 25px;
   width: 25px;
+}
+
+article.link-formulario > figure {
+  width: 207px;
+  margin: 0px auto 120px auto;
+}
+
+article#objetivo {
+  background-color: var(--cor2);
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article#objetivo > h2 {
+  color: var(--cor1);
+  font-size: 2.5em;
+  margin: 40px auto;
+}
+
+article#objetivo > div {
+  background-color: var(--cor1);
+  width: 335px;
+  height: 235px;
+  text-align: center;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--cor3);
+}
+
+article#objetivo > div > h3 {
+  font-size: 1.8em;
 }
