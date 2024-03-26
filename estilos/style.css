@@ -357,9 +357,10 @@ article.link-formulario > figure {
 }
 
 article#objetivo {
-  background-color: var(--cor2);
+  background: var(--cor2);
   text-align: center;
   padding: 5px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -384,4 +385,53 @@ article#objetivo > div {
 
 article#objetivo > div > h3 {
   font-size: 1.8em;
+}
+
+footer {
+  background-color: var(--cor0);
+  color: var(--cor1);
+  padding: 50px 5px 20px 5px;
+  text-align: center;
+}
+
+footer > div > nav > a > img {
+  width: 18px;
+  margin: 10px 10px 0px 0px;
+}
+
+footer > div:first-child p {
+  font-size: 0.6em;
+}
+
+footer > div:nth-child(2) > nav > a {
+  display: inline-block;
+  background-color: var(--cor1);
+  color: var(--cor0);
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+}
+
+footer > div:nth-child(2) > nav > a:hover {
+  background-color: var(--cor3);
+}
+
+footer > div:nth-child(2) nav li a {
+  display: inline-block;
+  color: var(--cor1);
+  text-decoration: none;
+  margin: 5px auto;
+}
+
+footer > div:nth-child(2) nav li a:hover {
+  text-decoration: underline;
+}
+
+footer > hr {
+  border: 0;
+  height: 1px;
+  width: 50%;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.45);
 }
