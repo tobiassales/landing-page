@@ -72,7 +72,7 @@ header > hr {
   background: linear-gradient(to left, transparent, var(--cor1), transparent);
 }
 
-main > article#formulario {
+article#formulario {
   width: 100%;
   height: 1050px;
   padding: 5px;
@@ -82,14 +82,13 @@ main > article#formulario {
   position: relative;
 }
 
-main > article#formulario > form {
+article#formulario > form {
   background-color: var(--cor1);
   width: 305px;
   padding: 25px;
   border: 1px solid var(--cor3);
   border-radius: 15px;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.35);
-
   position: absolute;
   bottom: 2%;
   left: 50%;
@@ -111,22 +110,45 @@ article#formulario form fieldset {
 article#formulario form fieldset legend {
   color: var(--cor2);
   font-weight: bolder;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 article#formulario form label {
-  margin: 0px 13px 0px 5px;
+  font-size: 0.8em;
+  margin: 0px 15px 0px 3px;
 }
 
 article#formulario form div.dados-pessoais label {
   display: none;
 }
 
-article#formulario form div.dados-pessoais input {
+article#formulario form div.dados-pessoais {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 5px 0px;
   border-radius: 8px;
-  margin: 3px 0px;
+}
+
+article#formulario form div.dados-pessoais img {
+  width: 15px;
+  margin: 0px 10px -2px 13px;
+}
+
+article#formulario form div.dados-pessoais input {
+  border: none;
   height: 48px;
-  width: 100%;
+  margin: 2px 0px;
+  width: calc(100% - 45px);
+}
+
+article#formulario form div.dados-pessoais input:focus {
+  border: 0;
+  outline: 0;
+}
+
+article#formulario form div.dados-pessoais input:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: var(--cor0);
+  -webkit-box-shadow: 0 0 0px 1000px var(--cor1) inset;
 }
 
 article#formulario form div#caixa-selecao legend {
@@ -252,6 +274,7 @@ article#projeto div {
 }
 
 article#projeto h2 {
+  color: var(--cor3);
   font-size: 2.5em;
   margin: 15px 0px;
 }
