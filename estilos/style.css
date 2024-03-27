@@ -115,7 +115,8 @@ article#formulario form fieldset legend {
 
 article#formulario form label {
   font-size: 0.8em;
-  margin: 0px 15px 0px 3px;
+  margin: 0px 20px 10px auto;
+  display: inline-block;
 }
 
 article#formulario form div.dados-pessoais label {
