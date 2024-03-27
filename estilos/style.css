@@ -74,7 +74,7 @@ header > hr {
 
 article#formulario {
   width: 100%;
-  height: 1050px;
+  height: 1160px;
   padding: 5px;
   background: var(--cor2) url("../Assets_Netuno/bannertopo.png") no-repeat;
   background-position: top center;
@@ -90,7 +90,7 @@ article#formulario > form {
   border-radius: 15px;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.35);
   position: absolute;
-  bottom: 2%;
+  bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -150,11 +150,6 @@ article#formulario form div.dados-pessoais input:-webkit-autofill,
 select:-webkit-autofill {
   -webkit-text-fill-color: var(--cor0);
   -webkit-box-shadow: 0 0 0px 1000px var(--cor1) inset;
-}
-
-article#formulario form div.dados-pessoais input::placeholder::after {
-  content: attr(data-last-letter);
-  color: red;
 }
 
 article#formulario form div#caixa-selecao legend {
@@ -304,7 +299,7 @@ article#problema {
 
 article#problema > article {
   background-color: var(--cor1);
-  min-width: 220px;
+  min-width: ;
   max-width: 420px;
   padding: 20px;
   border-radius: 12px;
@@ -413,11 +408,11 @@ article.link-formulario > div {
   margin: 115px auto 20px auto;
   background-color: var(--cor0);
   color: var(--cor1);
-  width: 335px;
+  width: 459px;
   height: 70px;
   border-radius: 8px;
   font-weight: bold;
-  padding: 10px;
+  padding: 15px;
   text-align: center;
   display: flex;
   justify-content: center;
