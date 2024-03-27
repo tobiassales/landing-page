@@ -38,7 +38,7 @@
                 id="inome"
                 required
                 autocomplete="name"
-                placeholder="Nome Completo"
+                placeholder="Nome Completo*"
                 maxlength="30"
               />
             </div>
@@ -100,13 +100,18 @@
             <fieldset>
               <legend>Conhecimento de Programação*</legend>
               <div class="selecao">
-                <input type="checkbox" name="html" id="ihtml" />
+                <input type="checkbox" name="html" id="ihtml" checked />
                 <label for="ihtml">HTML</label>
 
                 <input type="checkbox" name="css" id="icss" />
                 <label for="icss">CSS</label>
 
-                <input type="checkbox" name="javascript" id="ijavascript" />
+                <input
+                  type="checkbox"
+                  name="javascript"
+                  id="ijavascript"
+                  checked
+                />
                 <label for="ijavascript">JavaScript</label>
 
                 <input type="checkbox" name="php" id="iphp" />
@@ -121,7 +126,12 @@
                 <input type="checkbox" name="reactjs" id="ireactjs" />
                 <label for="ireactjs">ReactJS</label>
 
-                <input type="checkbox" name="react-native" id="ireact-native" />
+                <input
+                  type="checkbox"
+                  name="react-native"
+                  id="ireact-native"
+                  checked
+                />
                 <label for="ireact-native">React Native</label>
 
                 <input type="checkbox" name="node" id="inode" />
@@ -130,10 +140,10 @@
                 <input type="checkbox" name="python" id="ipython" />
                 <label for="ipython">Python</label>
 
-                <input type="checkbox" name="flutter" id="iflutter" />
+                <input type="checkbox" name="flutter" id="iflutter" checked />
                 <label for="iflutter">Flutter</label>
 
-                <input type="checkbox" name="outras" id="ioutras" />
+                <input type="checkbox" name="outras" id="ioutras" checked />
                 <label for="ioutras">Outras</label>
               </div>
             </fieldset>
@@ -141,7 +151,13 @@
           <fieldset>
             <legend>Já trabalhou com desenvolvimento?</legend>
             <div class="selecao">
-              <input type="radio" name="experiencia" id="inao" value="nao" />
+              <input
+                type="radio"
+                name="experiencia"
+                id="inao"
+                value="nao"
+                checked
+              />
               <label for="inao">Não</label>
               <input type="radio" name="experiencia" id="isim" value="sim" />
               <label for="isim">Sim</label>
@@ -150,9 +166,9 @@
           <hr />
           <p>(*) Campos obrigatórios</p>
           <div>
-            <input id="botao-enviar" type="submit" value="Enviar" />
+            <input type="submit" value="Enviar" onclick="validarCheckGroup()" />
           </div>
-          <p id="termos-uso">
+          <p>
             Ao clicar em enviar, você concorda com todos os termos de uso de
             dado descritos em <a href="#">política de privacidade</a>
           </p>
@@ -229,7 +245,7 @@
       </article>
 
       <article id="jornada">
-        <figure id="img-espelhada"></figure>
+        <figure></figure>
         <h2>Sua Jornada</h2>
         <figure></figure>
         <div>
@@ -253,6 +269,7 @@
           </figure>
           <p>640 horas de aplicação prática dos conceitos.</p>
         </div>
+
         <div>
           <figure>
             <img src="Assets_Netuno/icones/home.png" alt="Ícone Home" />
@@ -276,9 +293,11 @@
         <div>
           <p>
             Quero me cadastrar para o
-            <a href="#formulario">Processo Seletivo </a>
+            <a href="#formulario"
+              >Processo Seletivo
+              <img src="Assets_Netuno/icones/enter.png" alt="Ícone Enter"
+            /></a>
           </p>
-          <img src="Assets_Netuno/icones/enter.png" alt="Ícone Enter" />
         </div>
         <figure>
           <img
@@ -353,5 +372,15 @@
         <p>contato@netuno.com.br</p>
       </div>
     </footer>
+    <script>
+      function validarCheckGroup() {
+        if (
+          document.querySelectorAll('input[type="checkbox"]:checked').length < 3
+        ) {
+          alert("Conhecimento de programação: Mínimo 3!");
+          event.preventDefault(); //Impede o envio do formulário
+        }
+      }
+    </script>
   </body>
 </html>
