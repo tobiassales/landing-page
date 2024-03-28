@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Telas maiores / acima de 768px */
+/* Telas maiores / acima de 992px */
 
 /* Typical Device Breakpoints 
 Telas pequenas: até(menos que) 600px
@@ -54,19 +54,45 @@ article#formulario::before {
 
 article#projeto {
   text-align: center;
-  padding-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 30px;
 }
 
 article#projeto > figure {
   height: 445px;
   width: 525px;
-  margin: auto;
+  margin-right: 90px;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 article#projeto > div {
   text-align: left;
+  display: inline-block;
+  transform: translateY(-60px);
+}
+
+article#problema {
+  text-align: center;
+}
+
+article#problema > figure {
+  display: inline-block;
+  height: 750px;
+  width: 525px;
+}
+
+article#problema > div {
+  display: inline-block;
+  transform: translate(60px, -260px);
+  text-align: left;
+  width: 500px;
+  box-shadow: none;
+}
+
+article#problema > article#solucao {
+  display: flex;
+}
+
+article#problema > article#solucao > div {
+  margin: 0px 5px;
 }

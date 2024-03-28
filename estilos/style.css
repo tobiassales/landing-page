@@ -293,28 +293,29 @@ article#projeto p {
 }
 
 article#problema {
-  background: url("../Assets_Netuno/Container2.png") top center no-repeat;
-  background-size: contain;
   padding: 5px;
-  height: 1700px;
   width: 100%;
   margin-bottom: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
 }
 
-article#problema > article {
+article#problema > figure {
+  background: url("../Assets_Netuno/Container2.png") top center no-repeat;
+  background-size: contain;
+  height: 320px;
+  width: 100%;
+}
+
+article#problema > div {
   background-color: var(--cor1);
   min-width: 300px;
   max-width: 420px;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.45);
+  margin: auto;
 }
 
-article#problema > article > h2 {
+article#problema > div > h2 {
   background-image: linear-gradient(to right, var(--cor2), var(--cor3));
   background-clip: text;
   -webkit-background-clip: text;
@@ -324,30 +325,30 @@ article#problema > article > h2 {
   margin-bottom: 15px;
 }
 
-article#problema > article > h3,
+article#problema > div > h3,
 p,
 hr {
   margin: 10px 0px 20px 0px;
 }
 
-article#problema > article > hr {
+article#problema > div > hr {
   border: 0px;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-article#problema > div {
+article#problema > article#solucao > div {
   background-color: var(--cor1);
   width: 335px;
   height: 235px;
   text-align: center;
-  margin: 10px;
+  margin: 10px auto;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.45);
 }
 
-article#problema > div > h3 {
+article#problema > article#solucao > div > h3 {
   font-size: 1.8em;
 }
 
