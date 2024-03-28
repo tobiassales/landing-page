@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* Telas maiores / acima de 768px */
+
+/* Typical Device Breakpoints 
+Telas pequenas: até(menos que) 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1199px 
+Telas grandes: de 1200px pra cima
+*/
+
+:root {
+  --cor0: #000;
+  --cor1: #fff;
+  --cor2: #1a7fbd;
+  --cor3: #a4dcff;
+}
+
+header > figure {
+  margin-right: 50px;
+}
+
+header > nav > a.link-formulario {
+  margin-left: 65px;
+}
+
+article#formulario > figure {
+  height: 1160px;
+  background-size: contain;
+  background-position: left top;
+  position: relative;
+  left: -16%;
+}
+
+article#formulario > form {
+  width: 410px;
+  height: 800px;
+  top: 7%;
+  right: 40%;
+  left: 74%;
+  margin-right: 5px;
+}
+
+article#formulario::before {
+  content: "";
+  position: absolute;
+  top: 49.6%;
+  left: 0;
+  width: 100%;
+  height: 18.33%;
+  background-color: var(--cor1);
+}
+
+article#projeto {
+  text-align: center;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+article#projeto > figure {
+  height: 445px;
+  width: 525px;
+  margin: auto;
+}
+
+article#projeto > div {
+  text-align: left;
+}

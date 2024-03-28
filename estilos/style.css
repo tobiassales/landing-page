@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Mobile first / até 600px */
+/* Mobile first / até 768px */
 
 @import url("https://fonts.google.com/noto/specimen/Noto+Sans?query=noto");
 
@@ -75,11 +75,16 @@ header > hr {
 article#formulario {
   width: 100%;
   height: 1160px;
-  padding: 5px;
+  position: relative;
+  background-color: var(--cor2);
+}
+
+article#formulario > figure {
+  width: 100%;
+  height: 320px;
   background: var(--cor2) url("../Assets_Netuno/bannertopo.png") no-repeat;
   background-position: top center;
   background-size: contain;
-  position: relative;
 }
 
 article#formulario > form {
@@ -216,7 +221,7 @@ article#formulario input[type="radio"] + label {
 article#formulario hr {
   border: 0;
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 article#formulario p {
@@ -262,16 +267,19 @@ article#projeto {
 }
 
 article#projeto figure {
-  height: 400px;
-  width: 100%;
+  height: 263px;
+  width: 305px;
   background: url("../Assets_Netuno/dev.png") top center no-repeat;
   background-size: contain;
+  margin: auto;
+  margin-top: 50px;
 }
 
 article#projeto div {
   min-width: 220px;
   max-width: 420px;
-  margin: 0px auto 50px auto;
+  margin: auto;
+  margin-bottom: 50px;
 }
 
 article#projeto h2 {
@@ -299,7 +307,7 @@ article#problema {
 
 article#problema > article {
   background-color: var(--cor1);
-  min-width: ;
+  min-width: 300px;
   max-width: 420px;
   padding: 20px;
   border-radius: 12px;
@@ -404,11 +412,16 @@ article#jornada > div > p {
   right: 2%;
 }
 
+article.link-formulario {
+  margin: 5px;
+}
+
 article.link-formulario > div {
   margin: 115px auto 20px auto;
   background-color: var(--cor0);
   color: var(--cor1);
-  width: 459px;
+  min-width: 300px;
+  max-width: 459px;
   height: 70px;
   border-radius: 8px;
   font-weight: bold;
@@ -428,13 +441,7 @@ article.link-formulario p a:hover {
   text-decoration: underline;
 }
 
-article.link-formulario p {
-  margin-top: 20px;
-  margin-right: 5px;
-}
-
 article.link-formulario div img {
-  height: 25px;
   width: 25px;
   transform: translate(10px, 8px);
 }
