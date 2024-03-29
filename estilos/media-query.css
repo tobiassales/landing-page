@@ -65,6 +65,10 @@ article#projeto > figure {
   margin-right: 90px;
 }
 
+article#projeto > figure > img {
+  width: 525px;
+}
+
 article#projeto > div {
   display: inline-block;
   text-align: left;
@@ -132,5 +136,5 @@ footer > hr {
 footer > div:last-child {
   display: inline-block;
   text-align: left;
-  transform: translateY(-19px);
+  transform: translateY(-27px);
 }
