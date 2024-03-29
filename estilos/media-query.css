@@ -25,8 +25,13 @@ header > nav > a.link-formulario {
   margin-left: 65px;
 }
 
+article#formulario {
+  height: 1000px;
+}
+
 article#formulario > figure {
-  height: 1160px;
+  height: 1045px;
+  background: url("../Assets_Netuno/bannertopo2.png") no-repeat;
   background-size: contain;
   background-position: left top;
   position: relative;
