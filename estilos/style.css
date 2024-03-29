@@ -70,13 +70,14 @@ header > hr {
   border: 0;
   height: 1px;
   background: linear-gradient(to left, transparent, var(--cor1), transparent);
+  margin-bottom: -4px;
 }
 
 article#formulario {
   width: 100%;
   height: 1160px;
   position: relative;
-  background-color: green;
+  background-color: var(--cor2);
 }
 
 article#formulario > figure {
@@ -100,79 +101,79 @@ article#formulario > form {
   transform: translateX(-50%);
 }
 
-article#formulario form h2 {
+article#formulario > form > h2 {
   color: rgba(0, 0, 0, 0.23);
   font-size: 1.3em;
 }
 
-article#formulario form fieldset {
+article#formulario > form fieldset {
   border: none;
   padding-top: 10px;
   margin-bottom: 30px;
   margin-top: 10px;
 }
 
-article#formulario form fieldset legend {
+article#formulario > form fieldset legend {
   color: var(--cor2);
   font-weight: bolder;
   font-size: 0.8em;
 }
 
-article#formulario form label {
+article#formulario > form fieldset label {
   font-size: 0.8em;
   margin: 0px 20px 10px auto;
   display: inline-block;
 }
 
-article#formulario form div.dados-pessoais label {
+article#formulario > form div.dados-pessoais label {
   display: none;
 }
 
-article#formulario form div.dados-pessoais {
+article#formulario > form div.dados-pessoais {
   border: 1px solid rgba(0, 0, 0, 0.3);
   margin: 10px 0px;
   border-radius: 8px;
 }
 
-article#formulario form div.dados-pessoais img {
+article#formulario > form div.dados-pessoais img {
   width: 15px;
   margin: 0px 10px -2px 13px;
 }
 
-article#formulario form div.dados-pessoais input {
+article#formulario > form div.dados-pessoais input {
   border: none;
   height: 48px;
   margin: 2px 0px;
   width: calc(100% - 45px);
 }
 
-article#formulario form div.dados-pessoais input:focus {
+article#formulario > form div.dados-pessoais input:focus {
   border: 0;
   outline: 0;
 }
 
-article#formulario form div.dados-pessoais input:-webkit-autofill,
+article#formulario > form div.dados-pessoais input:-webkit-autofill,
 select:-webkit-autofill {
   -webkit-text-fill-color: var(--cor0);
   -webkit-box-shadow: 0 0 0px 1000px var(--cor1) inset;
 }
 
-article#formulario form div#caixa-selecao legend {
+article#formulario > form div#caixa-selecao legend {
   color: var(--cor1);
 }
 
-article#formulario form div#caixa-selecao {
+article#formulario > form div#caixa-selecao {
   background-color: var(--cor2);
   color: var(--cor1);
   margin: 0px -26px 20px -26px;
   padding: 10px 26px 1px 26px;
 }
 
-article#formulario form div.selecao > input {
+article#formulario > form div.selecao > input {
   display: none;
 }
 
-article#formulario form div.selecao > input + label {
+article#formulario > form div.selecao > input + label {
   position: relative;
   padding-left: 20px;
   cursor: pointer;
@@ -378,7 +379,7 @@ article#jornada > article#passos {
   min-width: 350px;
   max-width: 1200px;
   padding: 5px;
-  margin: auto;
+  margin: 30px auto;
   text-align: center;
 }
 
@@ -387,7 +388,7 @@ article#jornada > article#passos > div {
   background-color: var(--cor2);
   width: 320px;
   height: 70px;
-  margin: 0px 17px 17px 0px;
+  margin: 0px 17px 17px 17px;
   border-radius: 8px;
   padding: 0px 15px 0px 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.35);
@@ -427,15 +428,15 @@ article.link-formulario {
 }
 
 article.link-formulario > div {
-  margin: 0px auto 20px auto;
   background-color: var(--cor0);
+  margin: 0px auto 20px auto;
   color: var(--cor1);
   min-width: 300px;
   max-width: 459px;
   height: 70px;
   border-radius: 12px;
   font-weight: bold;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
   display: flex;
@@ -522,8 +523,16 @@ footer > div:nth-child(2) > nav > a {
   margin: 20px auto;
 }
 
+footer > div:nth-child(2) > nav ul {
+  display: inline-block;
+}
+
 footer > div:nth-child(2) > nav > a:hover {
   background-color: var(--cor3);
+}
+
+footer > div:nth-child(2) nav li {
+  list-style-type: none;
 }
 
 footer > div:nth-child(2) nav li a {

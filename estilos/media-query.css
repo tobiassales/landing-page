@@ -6,7 +6,7 @@
 Telas pequenas: até(menos que) 600px
 Celular: de 600px até 768px
 Tablet: de 768px até 992px
-Desktop: de 992px até 1199px 
+Desktop: de 992px até 1200px 
 Telas grandes: de 1200px pra cima
 */
 
@@ -26,29 +26,28 @@ header > nav > a.link-formulario {
 }
 
 article#formulario {
-  height: 1000px;
+  height: 1020px;
 }
 
 article#formulario > figure {
-  height: 1045px;
-  background: url("../Assets_Netuno/bannertopo2.png") no-repeat;
+  height: 1020px;
   background-size: contain;
-  background-position: left top;
-  position: relative;
-  left: -16%;
+  background-position: center center;
+  position: absolute;
+  left: -17%;
 }
 
 article#formulario > form {
   width: 410px;
   height: 800px;
-  top: 7%;
-  left: 74%;
+  top: 11%;
+  left: 71.8%;
 }
 
 article#formulario::before {
   content: "";
   position: absolute;
-  top: 49.6%;
+  top: 59.4%;
   left: 0;
   width: 100%;
   height: 18.33%;
@@ -91,6 +90,7 @@ article#problema > div {
   text-align: left;
   width: 500px;
   box-shadow: none;
+  margin-right: 50px;
 }
 
 article#problema > article#solucao {
