@@ -39,14 +39,14 @@ article#formulario > figure {
 article#formulario > form {
   width: 410px;
   height: 800px;
-  top: 11%;
+  top: 10.5%;
   left: 71.8%;
 }
 
 article#formulario::before {
   content: "";
   position: absolute;
-  top: 59.4%;
+  top: 55.4%;
   left: 0;
   width: 100%;
   height: 18.33%;
