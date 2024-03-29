@@ -29,7 +29,6 @@ article#formulario > figure {
   height: 1160px;
   background-size: contain;
   background-position: left top;
-  padding-top: 10px;
   position: relative;
   left: -16%;
 }
