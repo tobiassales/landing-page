@@ -502,13 +502,27 @@ footer {
   text-align: center;
 }
 
-footer > div > nav > a > img {
+footer > div:first-child {
+  display: inline-block;
+  text-align: left;
+  margin-right: 25px;
+  margin-bottom: 40px;
+}
+
+footer > div:first-child a > img {
   width: 18px;
   margin: 10px 10px 0px 0px;
 }
 
 footer > div:first-child p {
   font-size: 0.6em;
+}
+
+footer > div:nth-child(2) {
+  display: inline-block;
+  margin-left: 25px;
+  text-align: left;
+  transform: translateY(8px);
 }
 
 footer > div:nth-child(2) > nav > a {
@@ -518,17 +532,18 @@ footer > div:nth-child(2) > nav > a {
   font-weight: bold;
   text-decoration: none;
   padding: 10px 20px;
+  margin-right: 25px;
   border-radius: 8px;
   border: 2px solid var(--cor2);
-  margin: 20px auto;
-}
-
-footer > div:nth-child(2) > nav ul {
-  display: inline-block;
+  transform: translateY(-89px);
 }
 
 footer > div:nth-child(2) > nav > a:hover {
   background-color: var(--cor3);
+}
+
+footer > div:nth-child(2) ul {
+  display: inline-block;
 }
 
 footer > div:nth-child(2) nav li {
