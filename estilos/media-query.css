@@ -38,9 +38,13 @@ article#formulario > figure {
 
 article#formulario > form {
   width: 410px;
-  height: 800px;
+  height: 759px;
   top: 10.5%;
   left: 71.8%;
+}
+
+article#formulario > form p:last-child {
+  width: 295px;
 }
 
 article#formulario::before {

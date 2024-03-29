@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+/* Acima de 992px / BannerTopo */
+
 article#formulario > figure {
   background-size: cover;
 }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* Mobile first / até 768px */
+/* Mobile first / até 992px */
 
 @import url("https://fonts.google.com/noto/specimen/Noto+Sans?query=noto");
 
@@ -80,7 +80,7 @@ header > hr {
 
 article#formulario {
   width: 100%;
-  height: 1160px;
+  height: 1100px;
   position: relative;
   background-color: var(--cor2);
 }
@@ -88,8 +88,8 @@ article#formulario {
 article#formulario > figure {
   width: 100%;
   height: 320px;
-  background: var(--cor2) url("../Assets_Netuno/bannertopo.png") no-repeat;
-  background-position: top center;
+  background: var(--cor2) url("../Assets_Netuno/bannertopo.png") top center
+    no-repeat;
   background-size: contain;
 }
 
@@ -141,7 +141,7 @@ article#formulario > form div.dados-pessoais {
 }
 
 article#formulario > form div.dados-pessoais img {
-  width: 15px;
+  width: 14px;
   margin: 0px 10px -2px 13px;
 }
 
@@ -187,15 +187,15 @@ article#formulario > form div.selecao > input + label {
 
 article#formulario input[type="checkbox"] + label::before {
   content: "";
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
   width: 13px;
   height: 13px;
   border-radius: 3px;
   border: 1px solid var(--cor1);
   box-sizing: border-box;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 article#formulario input[type="checkbox"]:checked + label::before {
@@ -204,15 +204,15 @@ article#formulario input[type="checkbox"]:checked + label::before {
 
 article#formulario input[type="radio"] + label::before {
   content: "";
-  position: absolute;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
   width: 13px;
   height: 13px;
   border-radius: 3px;
   border: 1px solid var(--cor2);
   box-sizing: border-box;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 article#formulario input[type="radio"]:checked + label::before {
@@ -227,6 +227,7 @@ article#formulario hr {
   border: 0;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 7px;
 }
 
 article#formulario p {
@@ -254,6 +255,7 @@ article#formulario div > input[type="submit"]:hover {
 
 article#formulario p:last-child {
   color: rgba(0, 0, 0, 0.45);
+  margin: 0px auto;
 }
 
 article#formulario p:last-child > a {
@@ -340,7 +342,7 @@ hr {
 article#problema > div > hr {
   border: 0px;
   height: 1px;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 article#problema > article#solucao > div {
@@ -364,7 +366,7 @@ article#jornada > div > figure {
   background-size: contain;
   width: 340px;
   height: 30px;
-  margin: 0px auto 0px auto;
+  margin: 0px auto;
 }
 
 article#jornada > div > figure:first-child {
@@ -446,9 +448,6 @@ article.link-formulario > div {
   padding: 5px;
   text-align: center;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 article.link-formulario a {
@@ -573,6 +572,6 @@ footer > hr {
   border: 0;
   height: 1px;
   width: 50%;
-  margin: 40px auto;
+  margin: 20px auto;
   background-color: rgba(255, 255, 255, 0.45);
 }

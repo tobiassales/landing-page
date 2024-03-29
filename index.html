@@ -63,6 +63,7 @@
                 autocomplete="email"
                 pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
                 placeholder="E-mail*"
+                maxlength="40"
               />
             </div>
             <div class="dados-pessoais">
@@ -158,6 +159,7 @@
               </div>
             </fieldset>
           </div>
+
           <fieldset>
             <legend>Já trabalhou com desenvolvimento?</legend>
             <div class="selecao">
@@ -213,10 +215,8 @@
         <div>
           <h2>O Problema</h2>
           <h3>
-            <strong
-              >Falta de profissionais de TI no Mercado brasileiro: um problema
-              que demanda atenção urgente.</strong
-            >
+            Falta de profissionais de TI no Mercado brasileiro: um problema que
+            demanda atenção urgente.
           </h3>
           <hr />
           <p>
@@ -291,7 +291,6 @@
             </figure>
             <p>640 horas de aplicação prática dos conceitos.</p>
           </div>
-
           <div>
             <figure>
               <img src="Assets_Netuno/icones/home.png" alt="Ícone Home" />
@@ -381,6 +380,7 @@
           <p>Netuno&#169; 2022 - Todos os direitos reservados</p>
         </nav>
       </div>
+
       <div>
         <nav>
           <a href="#formulario" class="link-formulario">Processo Seletivo</a>
@@ -393,6 +393,7 @@
         </nav>
       </div>
       <hr />
+
       <div>
         <h4><strong>Contato</strong></h4>
         <p>11 91234.5678</p>
@@ -404,7 +405,7 @@
         if (
           document.querySelectorAll('input[type="checkbox"]:checked').length < 3
         ) {
-          alert("Conhecimento de programação: Mínimo 3!");
+          alert("Conhecimento de Programação: Mínimo 3!");
           event.preventDefault(); //Impede o envio do formulário
         }
       }
