@@ -57,11 +57,16 @@ header > nav > a {
   margin: 5px;
 }
 
+header > nav > a:hover {
+  background-color: var(--cor3);
+  color: var(--cor2);
+}
+
 header > nav > a.link-formulario {
   background-color: var(--cor0);
 }
 
-header > nav > a:hover {
+header > nav > a.link-formulario:hover {
   background-color: var(--cor3);
   color: var(--cor0);
 }
@@ -189,7 +194,6 @@ article#formulario input[type="checkbox"] + label::before {
   height: 13px;
   border-radius: 3px;
   border: 1px solid var(--cor1);
-  background-color: var(--cor2);
   box-sizing: border-box;
 }
 
@@ -207,7 +211,6 @@ article#formulario input[type="radio"] + label::before {
   height: 13px;
   border-radius: 3px;
   border: 1px solid var(--cor2);
-  background-color: var(--cor1);
   box-sizing: border-box;
 }
 

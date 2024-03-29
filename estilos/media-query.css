@@ -31,7 +31,6 @@ article#formulario {
 
 article#formulario > figure {
   height: 1020px;
-  background-size: contain;
   background-position: center center;
   position: absolute;
   left: -17%;
