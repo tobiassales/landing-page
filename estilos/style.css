@@ -126,7 +126,7 @@ article#formulario > form fieldset legend {
 
 article#formulario > form fieldset label {
   font-size: 0.8em;
-  margin: 0px 20px 10px auto;
+  margin: 0px 20px 10px 0px;
   display: inline-block;
 }
 
@@ -187,7 +187,7 @@ article#formulario > form div.selecao > input + label {
 article#formulario input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
-  left: -10%;
+  left: 0%;
   top: 50%;
   transform: translateY(-50%);
   width: 13px;
@@ -204,7 +204,7 @@ article#formulario input[type="checkbox"]:checked + label::before {
 article#formulario input[type="radio"] + label::before {
   content: "";
   position: absolute;
-  left: -10%;
+  left: 0%;
   top: 50%;
   transform: translateY(-50%);
   width: 13px;

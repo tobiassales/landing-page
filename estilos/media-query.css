@@ -54,11 +54,13 @@ article#formulario::before {
 }
 
 article#projeto {
+  background: linear-gradient(7deg, var(--cor3) -100%, var(--cor2) 75%);
   text-align: center;
   padding-top: 0px;
 }
 
 article#projeto > figure {
+  background: none;
   height: 445px;
   width: 525px;
   display: inline-block;
